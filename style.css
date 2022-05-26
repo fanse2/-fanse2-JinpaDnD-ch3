@@ -72,12 +72,6 @@ body {
     to {transform: translateY(0%);}
 }
 
-.board {
-    background: black;
-    padding: 2px;
-    min-width: 600px;
-    min-height: 600px;
-}
 
 .status {
     font-size: 1.5rem;
@@ -141,49 +135,4 @@ body {
 
 .objective {
     font-size: 1.2rem;
-}
-
-/* Game Div */
-
-.game {
-    position: relative;
-    color: white;
-    background-color: black;
-    /* background-image: url(./images/milky-way-2695569__480.jpg); */
-}
-
-.center {
-    text-align: center;
-}
-
-.canvas-wrapper {
-    border-style: solid;
-    border-color: white;
-    width: 90%;
-    margin: 30px;
-    padding: 0;
-}
-
-canvas {
-    width: 100%;
-    background-image: url(./images/milky-way-2695569__480.jpg);
-
-}
-
-#start {
-    border: 1px solid #666;
-    background: none;
-    color: #FFF;
-    cursor: pointer;
-    padding: .5rem 1rem;
-    border-radius: 2px;
-    margin: 3px;
-}
-
-#start:hover {
-    background: #666;
-}
-
-#msg {
-    font-size: 1.3rem;
 }

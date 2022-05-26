@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-game.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>DnD Jinpa</title>
 </head>
@@ -72,21 +73,42 @@
 
             </div>
            
+            <div style="display: none">
+                <img id="e1" src="img/e1.png" style="display: none;">
+                <img id="e2" src="img/e2.png" style="display: none;">
+                <img id="e3" src="img/e3.png" style="display: none;">
+                <img id="e4" src="img/e4.png" style="display: none;">
+                <img id="e5" src="img/e5.png" style="display: none;">
+                <img id="e6" src="img/e6.png" style="display: none;">
+                <img id="ex1" src="img/ex1.png" style="display: none;">
+                <img id="ex2" src="img/ex2.png" style="display: none;">
+                <img id="ex3" src="img/ex3.png" style="display: none;">
+                <img id="ex4" src="img/ex4.png" style="display: none;">
+                <img id="ex5" src="img/ex5.png" style="display: none;">
+                <img id="jet" src="img/jet.png" style="display: none;">
+            </div>
             <div class="board">
-                <div class="game center">
-                    <div class="canvas-wrapper">
-                        <p id="score">🛸🛸🛸</p>
-                        <canvas id="canvas-top"></canvas>
-                        <button id="start">시작</button>
-                        <p id="msg">방향키(←↑→↓)로 녹색 승리호를 조작하시면됩니다.<br>
-                        빨간박스의 자원을 수거하시오</p>
-                       
-                    </div>
+                <div class="top">
+                    <div class="part part1">score</div>
+                    <div class="part part2">jinpa sys</div>
+                    <div class="part part3">stage</div>
+                    <div class="part part4">3</div>
+                    <div class="part part5">5000</div>
+                    <div class="part part6">1</div>
+                </div>
+                <canvas id="grid" width="480" height="540"></canvas>
+                <div class="bottom">
+                    <div class="part part11">3</div>
+                    <div class="part part12"></div>
+                    <div class="part part13"></div>
+                    <div class="part part14"><span class="startButton" onclick="start()">Start</span></div>
+                    <div class="part part15">0.92</div>
                 </div>
             </div>
 
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="script-game.js"></script>
 </body>
 </html>
